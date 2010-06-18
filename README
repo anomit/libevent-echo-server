@@ -1,0 +1,6 @@
+====================
+Libevent echo server
+====================
+Established connections are maintained in a red black tree
+
+Run as ./server <bind IP address> <port>
