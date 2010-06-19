@@ -95,6 +95,7 @@ node_t *delete_r(node_t *root, int data, int *done)
 
         if (root->data == data)
         {
+            event_del(&root->ev);
             /* Has only one child */
             if (root->link[0] == NULL || root->link[1] == NULL)
             {
